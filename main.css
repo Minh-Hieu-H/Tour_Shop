@@ -1,65 +1,133 @@
 /* Reset css */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 html {
-    font-family: Arial, Helvetica, sans-serif;
-    scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+/*  */
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col {
+    padding-left:8px;
+    padding-right: 8px;
+    float:left;
+}
+.col-3 {
+    width: calc(100%/3);
 }
 /* header */
 #header {
-    width: 100%;
-    height: 50px;
-    background-color: black;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
 }
 .nav {
-    
 }
-.nav>li {
-    display: inline-block;
-    padding:  0 24px;
-    line-height: 50px;
-    text-transform: uppercase;
-    color:#fff;
-    position: relative;
+.nav > li {
+  display: inline-block;
+  padding: 0 24px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
 }
-.nav>li:hover,
-#header .subnav>li:hover
- {
-    color: #000!important;
-    background-color: #ccc!important;
-    
-} 
+.nav > li:hover,
+#header .subnav > li:hover {
+  color: #000 !important;
+  background-color: #ccc !important;
+}
 #header .subnav {
-    position: absolute;
-    background-color: #FFF;
-    top:50px;
-    left : 20px;
-    display: none;
-
-
+  position: absolute;
+  background-color: #fff;
+  top: 50px;
+  left: 20px;
+  display: none;
 }
 #header li:hover .subnav {
-    display: block;
+  display: block;
 }
 #header .subnav li {
-     color : black;
-     text-decoration: none;
-     list-style-type: none;
-     padding : 8px 16px;
-     min-width: 160px;
-    text-transform: none;
+  color: black;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 8px 16px;
+  min-width: 160px;
+  text-transform: none;
 }
 .nav .down_icon {
-    color :#fff;
-    font-size: 20px;
-    
+  color: #fff;
+  font-size: 20px;
 }
-
+/* Slide */
 #slide {
-    height: 1800px;
-    background-color: red;
+  margin-top: 46px;
+  background: url(asset/img/chicago.jpg) top center/cover;
+  padding-top: 50%;
+  position: relative;
 }
-
+.text-content {
+  position: absolute;
+  bottom: 56px;
+  /* left: 0;
+right: 0;
+text-align: center; */
+  color: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.description-content {
+  margin-top: 10px;
+}
+/* container */
+#container {
+    width: 800px;
+    margin: auto;
+}
+/* introduction */
+#introduction {
+    padding: 64px 16px 112px 16px;
+    max-width: 100%;
+}
+.section-heading {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    margin: 10px 0;
+}
+.section-subheading {
+    font-size: 15px;
+    text-align: center;
+    margin: 5px 0;
+    font-style: italic;
+    opacity:0.6;
+}
+.intro-content {
+    text-align:justify;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+/*  */
+.member-item {
+    text-align: center;
+}
+.member-name{
+    margin:15px 0 ; 
+}
+.member-image {
+    width: 154px;
+    border-radius: 4px;
+}
